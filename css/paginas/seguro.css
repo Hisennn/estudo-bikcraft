@@ -1,0 +1,152 @@
+.fine-holder {
+  padding-top: 80px;
+}
+
+.fb-s-d {
+  position: relative;
+}
+
+.fb-s-d::after {
+  content: url("/img/detalhe/bottom-left.svg");
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+
+.fb-s-d::before {
+  content: url("/img/detalhe/bottom-right.svg");
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.fine-bnfts h2 {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.bnfts-holder ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+  color: var(--c3);
+  justify-content: start;
+  padding-bottom: 120px;
+}
+
+.bnfts-holder ul li img {
+  margin-bottom: 4px;
+}
+
+.bnfts-holder ul li {
+  display: grid;
+  gap: 8px;
+}
+
+.ask-quest {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.ask-quest h2 {
+  margin-bottom: 48px;
+}
+
+.ask-title-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ask-title-icon button:hover {
+  transform: scaleY(-1);
+}
+
+.ask-title-icon button {
+  height: 24px;
+  width: 24px;
+  transition: transform 0.3s;
+}
+
+.ask-title-icon button img {
+  min-height: 6px;
+  min-width: 18px;
+}
+
+.ask-title-icon h5 {
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.ask-title-icon h5::before {
+  position: absolute;
+  content: "";
+  background-color: var(--p1);
+  width: 12px;
+  height: 8px;
+  top: 7px;
+  left: -24px;
+}
+
+.ask-quest-list li {
+  border-radius: 5px;
+}
+
+.ask-quest-list li:nth-child(odd) {
+  background-color: var(--c1);
+}
+
+.ask-quest-item {
+  padding: 20px 48px;
+}
+
+.ask-quest-item p {
+  margin-top: 6px;
+  color: var(--c8);
+  max-width: 75ch;
+}
+
+#seguros .fh-dec::after {
+  top: -60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .fine-holder {
+    padding: 20px;
+  }
+
+  #seguros .fine-holder {
+    padding-top: 40px;
+  }
+  .fine-bnfts {
+    padding: 20px;
+  }
+
+  .fine-bnfts h2 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .ask-quest {
+    padding: 48px 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bnfts-holder ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    color: var(--c3);
+    justify-content: start;
+    padding-bottom: 60px;
+  }
+  .fine-bnfts h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .fb-s-d::after,
+  .fb-s-d::before {
+    display: none;
+  }
+}

@@ -1,0 +1,149 @@
+.bike-s {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.bike-s span {
+  line-height: 1.2;
+}
+
+.bike-main-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bike-img {
+  display: grid;
+}
+
+.bike-img img {
+  grid-area: 1/1;
+}
+
+.bike-img span {
+  grid-area: 1 / 1;
+  place-self: start end;
+  margin-top: 20px;
+  background: var(--c10);
+  color: var(--c1);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+.bike-main-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+  position: relative;
+}
+
+.bike-main-info::after {
+  position: absolute;
+  content: url("/img/detalhe/top-right.svg");
+  right: 0px;
+  top: -20px;
+}
+
+.bike-main-info h3 {
+  margin-bottom: 20px;
+  position: relative;
+  line-height: 1.3333;
+  grid-column: 1/-1;
+}
+
+.bike-main-info h3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  margin-bottom: 8px;
+}
+
+.bike-main-info p {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+  color: var(--c7);
+}
+
+.bike-main-info a {
+  place-self: end;
+}
+
+.bike-main-info-descbtn ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--c10);
+}
+
+.bike-main-info-descbtn li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bike-desc-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bike-main-bg:nth-child(even) {
+  background: linear-gradient(to right, #fff 30%, var(--c10) 0%);
+
+  p {
+    color: var(--c3);
+  }
+
+  ul {
+    color: var(--c1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #bicicletas .bike-s {
+    padding: 20px;
+  }
+
+  #bicicletas .bike-main-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #bicicletas .bike-main-bg:nth-child(even) {
+    background: var(--c10);
+  }
+
+  #bicicletas .bike-main-info::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .bike-main-info-descbtn ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+
+  .bike-main-info a {
+    place-self: start;
+  }
+
+  .bike-main-info {
+    grid-template-columns: 1fr;
+  }
+}

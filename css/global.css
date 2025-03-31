@@ -1,0 +1,97 @@
+:root {
+  --c1: #f5f5f5;
+  --c2: #d7d7d7;
+  --c3: #b8b8b8;
+  --c4: #8a8a8a;
+  --c5: #626262;
+  --c6: #505050;
+  --c7: #353535;
+  --c8: #252525;
+  --c9: #202020;
+  --c10: #080808;
+  --p1: #f2b222;
+  --p2: #d89602;
+  --p3: #ea8c08;
+  --p4: #7b5501;
+  --p5: #260d00;
+  --gradiente: linear-gradient(to bottom, #f2b222, #ea8c08);
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.b-gradiente {
+  background: var(--gradiente);
+}
+
+.c-principal {
+  color: var(--p1);
+}
+
+.marg-center {
+  margin: 0 auto;
+}
+
+.width-limit {
+  max-width: 1200px;
+}
+
+.pad-16-32 {
+  padding: 16px 32px;
+}
+
+.pad-24-0 {
+  padding: 24px 0px;
+}
+
+.bg-black {
+  background-color: var(--c10);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-white2 {
+  background-color: var(--c1);
+}
+
+.bg-light-gray {
+  background-color: var(--c1);
+}
+
+.bg-gray {
+  background-color: var(--c9);
+}
+
+.bg-p {
+  background-color: var(--p1);
+}
+
+.border5 {
+  border-radius: 5px;
+}
+
+textarea,
+input {
+  border: 1px solid var(--c2);
+  border-radius: 5px;
+  background-color: var(--c1);
+  padding: 12px;
+  transition: border 0.2s ease;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-size: 0.9rem;
+  color: var(--c4);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--p1);
+  box-shadow: 0 0 4px var(--p1);
+  background: #fff;
+  outline: none;
+}

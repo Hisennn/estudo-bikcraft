@@ -1,0 +1,261 @@
+.bike-int-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.name-price {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.name-price::after {
+  position: absolute;
+  content: url("/img/detalhe/top-right-grad.svg");
+  top: 40px;
+  right: 0px;
+}
+
+.name-price span {
+  color: var(--c3);
+}
+
+.bike-int-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bike-int-imgs img {
+  flex: 1;
+  min-width: 100px;
+}
+
+.bike-int-imgs img:first-child {
+  min-width: 100%;
+}
+
+.b-i-i-t-btn {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 12px;
+  margin-bottom: 40px;
+}
+
+.b-i-i-t-btn a {
+  grid-row: span 2;
+}
+
+.b-i-i-t-btn span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--c3);
+}
+
+.b-i-text {
+  color: var(--c3);
+  margin-bottom: 32px;
+}
+
+.bike-int-info .bi-info {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.bike-int-info h2 {
+  margin-bottom: 12px;
+}
+
+.bike-int-info .bi-info p {
+  color: var(--c3);
+}
+
+.bike-int-info .bi-info h3 {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.bi-sheet li {
+  display: flex;
+  justify-content: space-between;
+  color: var(--c2);
+  position: relative;
+}
+
+.bi-sheet li::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 516px;
+  background-color: var(--c8);
+  top: -17px;
+}
+
+.bi-sheet li:first-child::before {
+  display: none;
+}
+
+.bi-sheet li span {
+  color: var(--c3);
+}
+
+.bi-sheet {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-bottom: 120px;
+}
+
+.bike-other-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 140px;
+}
+
+.bike-other-list li {
+  min-width: 360px;
+}
+
+.bike-other-content h2 {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.bike-other-content h2::after {
+  position: absolute;
+  content: url("/img/detalhe/top-right.svg");
+  top: 60px;
+  right: 0px;
+}
+
+.bike-other-list li:hover h3::before {
+  width: 24px;
+}
+
+.bike-atc-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bg-bike-atc {
+  box-shadow: inset 0 -60px var(--c10), inset 0 60px #fff;
+}
+
+.bike-atc-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.bike-atc-text h2 {
+  margin-bottom: 32px;
+}
+
+.bike-atc-text p {
+  color: var(--c3);
+  margin-bottom: 20px;
+}
+
+.bike-atc-text {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.bike-atc-text::after {
+  position: absolute;
+  content: url("/img/detalhe/bottom-right-p.svg");
+  bottom: 120px;
+  right: 0px;
+}
+
+.bike-atc-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  #bicicletas-interna .mhbki {
+    padding: 20px;
+  }
+
+  .bike-int-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .bike-int-imgs {
+    order: 2;
+  }
+
+  .b-i-i-t-btn {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .bg-bike-atc article {
+    padding: 20px;
+  }
+
+  #bicicletas-interna .name-price {
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  .bi-sheet {
+    margin-bottom: 20px;
+  }
+
+  .bike-int-imgs {
+    margin-bottom: 40px;
+  }
+  .bike-other-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bike-other-list {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .bike-atc-holder {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-atc-holder img {
+    height: 200px;
+    order: 2;
+  }
+
+  .bike-atc-text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .bg-bike-atc {
+    box-shadow: inset 0 -60px var(--c10);
+  }
+
+  .bike-atc-text::after {
+    display: none;
+  }
+}

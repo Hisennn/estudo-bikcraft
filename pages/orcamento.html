@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikcraft - Orçamento</title>
+    <link rel="preload" href="/css/style.css" as="style" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+sml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=La+Belle+Aurore&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="head-bg bg-black">
+      <header class="width-limit marg-center pad-24-0">
+        <a href="/index.html"><img src="/img/bikcraft.svg" alt="Bikcraft" width="136" height="32" /></a>
+        <nav>
+          <ul class="regular poppins">
+            <li><a href="/pages/bicicletas.html">Bicicletas</a></li>
+            <li><a href="/pages/seguro.html">Seguros</a></li>
+            <li><a href="/pages/contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div id="orcamento">
+      <main>
+        <div class="orcamento-title-bg bg-gray">
+          <section class="orcamento-title marg-center width-limit">
+            <span class="subspan-small poppins uppercase semibold">Cotações no seu Email</span>
+            <h2 class="poppins semibold font64 line-titleh1 f-white">solicite um orçamento<span class="ponto">.</span></h2>
+          </section>
+        </div>
+
+        <form class="ocmt-ct-bg" action="/pages/orcamento.html">
+          <section class="marg-center width-limit">
+            <div class="orcamento-container">
+              <div class="bik-fine-type bg-black">
+                <div>
+                  <div id="bik-fine-opt">
+                    <h2 class="semibold line-13 font14 uppercase">Bikcraft ou Seguro?</h2>
+                    <div class="bik-or-fine radio-group r-i-g-group">
+                      <div class="r-i-g-item">
+                        <input type="radio" id="bikcraft" name="opcao" value="bikcraft" />
+                        <label for="bikcraft">Bikcraft</label>
+                      </div>
+
+                      <div class="r-i-g-item">
+                        <input type="radio" id="seguro" name="opcao" value="seguro" />
+                        <label for="seguro">Seguro</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="bik-type-opt">
+                    <h2 class="semibold line-13 font14 uppercase">Escolha a sua</h2>
+                    <div class="bik-select-type radio-group r-i-g-group">
+                      <div class="r-i-g-item">
+                        <input type="radio" id="nimbus" name="bike" value="nimbus" />
+                        <label for="nimbus">Nimbus Stark <span class="rig-preco font16 line-13 f-black">R$ 4999</span></label>
+                        <div class="rig-item-content bg-white2 border5">
+                          <ul>
+                            <li class="font14 line-13 regular"><img src="/img/icones/eletrica.svg" alt="" height="20" width="20" />Motor Elétrico</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/carbono.svg" alt="" height="20" width="20" />Fibra de Carbono</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/velocidade.svg" alt="" height="20" width="20" />65 km/h</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/rastreador.svg" alt="" height="20" width="20" />Rastreador</li>
+                          </ul>
+                          <img src="/img/bicicletas/nimbus.jpg" alt="" class="border5" />
+                        </div>
+                      </div>
+
+                      <div class="r-i-g-item">
+                        <input type="radio" id="magic" name="bike" value="magic" />
+                        <label for="magic">Magic Might<span class="rig-preco font16 line-13 f-black">R$ 2599</span></label>
+                        <div class="rig-item-content bg-white2 border5">
+                          <ul>
+                            <li class="font14 line-13 regular"><img src="/img/icones/eletrica.svg" alt="" height="20" width="20" />Motor Elétrico</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/carbono.svg" alt="" height="20" width="20" />Fibra de Carbono</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/velocidade.svg" alt="" height="20" width="20" />40 km/h</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/rastreador.svg" alt="" height="20" width="20" />Rastreador</li>
+                          </ul>
+                          <img src="/img/bicicletas/magic.jpg" alt="" class="border5" />
+                        </div>
+                      </div>
+
+                      <div class="r-i-g-item">
+                        <input type="radio" id="nebula" name="bike" value="nebula" />
+                        <label for="nebula">Nebula Cosmic<span class="rig-preco font16 line-13 f-black">R$ 3999</span></label>
+                        <div class="rig-item-content bg-white2 border5">
+                          <ul>
+                            <li class="font14 line-13 regular"><img src="/img/icones/eletrica.svg" alt="" height="20" width="20" />Motor Elétrico</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/carbono.svg" alt="" height="20" width="20" />Fibra de Carbono</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/velocidade.svg" alt="" height="20" width="20" />60 km/h</li>
+                            <li class="font14 line-13 regular"><img src="/img/icones/rastreador.svg" alt="" height="20" width="20" />Rastreador</li>
+                          </ul>
+                          <img src="/img/bicicletas/nebula.jpg" alt="" class="border5" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="fine-price-opt">
+                    <h2 class="fpoh2 semibold line-13 font14 uppercase">Escolha seu Plano</h2>
+                    <div class="radio-group r-i-g-group">
+                      <div class="r-i-g-item">
+                        <input type="radio" id="prata" name="produto" value="prata" />
+                        <label for="prata">Prata<span class="rig-preco font16 line-13 f-black">R$ 199</span></label>
+                      </div>
+
+                      <div class="r-i-g-item">
+                        <input type="radio" id="ouro" name="produto" value="ouro" />
+                        <label for="ouro">Ouro<span class="rig-preco font16 line-13 f-black">R$ 299</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orcamento-form bg-white">
+                <h2 class="semibold line-13 font14 uppercase f-white col-2">Dados Pessoais</h2>
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="nome">Nome</label>
+                  <input placeholder="Nome completo" type="text" id="nome" name="nome" required />
+                </div>
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="telefone">Telefone</label>
+                  <input placeholder="(00) 00000-0000" type="text" id="telefone" name="telefone" required />
+                </div>
+                <div class="col-2">
+                  <label class="font16 f-black line-13 poppins medium" for="cpf">CIN (CPF)</label>
+                  <input placeholder="000-000-000-00" type="cpf" id="cpf" name="cpf" required />
+                </div>
+                <div class="col-2">
+                  <label class="font16 f-black line-13 poppins medium" for="email">Email</label>
+                  <input placeholder="contato@email.com" type="email" id="email" name="email" required />
+                </div>
+                <h2 class="h2-ent semibold line-13 font14 uppercase f-white col-2">Entrega</h2>
+
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="cep">CEP</label>
+                  <input placeholder="00.000-000" type="text" id="cep" name="cep" required />
+                </div>
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="numero">Número</label>
+                  <input type="text" id="numero" name="numero" required />
+                </div>
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="logradouro">Logradouro</label>
+                  <input placeholder="Rua, avenida, praça, etc..." type="text" id="logradouro" name="logradouro" required />
+                </div>
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="bairro">Bairro</label>
+                  <input type="bairro" id="bairro" name="bairro" required />
+                </div>
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="cidade">Cidade</label>
+                  <input type="text" id="cidade" name="cidade" required />
+                </div>
+                <div>
+                  <label class="font16 f-black line-13 poppins medium" for="estado">Estado</label>
+                  <input type="text" id="estado" name="estado" required />
+                </div>
+                <div class="terms-o-label font16 line-13 poppins medium col-2">
+                  <input type="checkbox" name="termos" id="termos" required />
+                  <label for="termos">Li e aceito os <a class="f-black" href="/pages/termos.html">Termos e Condições</a></label>
+                </div>
+                <button type="submit" class="btn-p poppins uppercase semibold pad-16-32 col-2">Solicitar Orçamento</button>
+              </div>
+            </div>
+          </section>
+        </form>
+      </main>
+    </div>
+
+    <div class="footer-bg bg-black">
+      <footer class="width-limit marg-center">
+        <div class="footer-content">
+          <a class="footer-link-home" href="/index.html"><img class="footer-logo" src="/img/bikcraft.svg" alt="Bikcraft" width="136" height="32" /></a>
+          <div class="footer-contact font18">
+            <h4 class="font24 line-13 semibold uppercase">Contato</h4>
+            <div class="footer-cnt-info">
+              <p>+55 11 9 9999-9999</p>
+              <p>Contato@bikcraft.com</p>
+            </div>
+            <div class="footer-lct-info">
+              <p>Rua Constantinopla 25-3, Centro</p>
+              <p>São Paulo - SP</p>
+            </div>
+            <div class="footer-social-media">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+                <img src="/img/redes/instagram.svg" alt="Instagram" width="32" height="32" />
+              </a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+                <img src="/img/redes/facebook.svg" alt="Facebook" width="32" height="32" />
+              </a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+                <img src="/img/redes/youtube.svg" alt="YouTube" width="32" height="32" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-info font18">
+            <h4 class="font24 line-13 semibold uppercase">Informações</h4>
+            <ul>
+              <li><a href="/pages/bicicletas.html">Bicicletas</a></li>
+              <li><a href="/pages/seguro.html">Seguros</a></li>
+              <li><a href="/pages/contato.html">Contato</a></li>
+              <li><a href="/pages/termos.html">Termos e Condições</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-cop">
+          <span class="semibold font16">Bikcraft © Alguns Direitos Reservados</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

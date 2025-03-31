@@ -1,0 +1,157 @@
+.font12 {
+  font-size: 0.72rem;
+}
+
+.font14 {
+  font-size: 0.845rem;
+}
+
+.font16 {
+  font-size: 0.97rem;
+}
+
+.font18 {
+  font-size: 1.095rem;
+}
+
+.font20 {
+  font-size: 1.09rem;
+}
+
+.font24 {
+  font-size: 1.47rem;
+}
+
+.font28 {
+  font-size: 1.72rem;
+}
+
+.font32 {
+  font-size: 1.97rem;
+}
+
+.font36 {
+  font-size: 2.22rem;
+}
+
+.font40 {
+  font-size: 2.47rem;
+}
+
+.font64 {
+  font-size: 4rem;
+}
+
+.desc-name {
+  color: var(--p3);
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.dmsans {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+}
+
+.ponto {
+  color: var(--p1) !important;
+}
+
+.line-titleh1 {
+  line-height: 1.23;
+}
+
+.line-13 {
+  line-height: 1.3;
+}
+
+.preco-home {
+  line-height: 1.4444;
+  color: var(--c6);
+}
+
+.subspan {
+  line-height: 1.6667;
+  color: var(--c4);
+}
+
+.subspan-small {
+  line-height: 1.2;
+  color: var(--c4);
+}
+
+.f-white {
+  color: var(--c1);
+}
+
+.f-black {
+  color: var(--c10);
+}
+
+@media screen and (max-width: 1200px) {
+  .font64 {
+    font-size: 3rem;
+  }
+
+  .font40 {
+    font-size: 2rem;
+  }
+
+  .font32 {
+    font-size: 1.5rem;
+  }
+  .font24 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .font64 {
+    font-size: 2.5rem;
+  }
+
+  .font40 {
+    font-size: 1.75rem;
+  }
+
+  .font32 {
+    font-size: 1.38rem;
+  }
+
+  .font24 {
+    font-size: 1.125rem;
+  }
+
+  .font18 {
+    font-size: 0.9rem;
+  }
+
+  .font20 {
+    font-size: 1.05rem;
+  }
+}

@@ -1,0 +1,41 @@
+.terms-title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.terms-text {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.terms-text section ul {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.terms-text section ul li {
+  color: var(--c8);
+  max-width: 100ch;
+}
+
+@media screen and (max-width: 1200px) {
+  .terms-title {
+    padding: 40px 20px;
+  }
+
+  .terms-text {
+    padding: 40px 20px;
+  }
+
+  .terms-text section ul {
+    margin-top: 16px;
+    margin-bottom: 26px;
+  }
+
+  .terms-text {
+    margin-top: 40px;
+  }
+}

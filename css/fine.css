@@ -1,0 +1,44 @@
+.fine {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.fine h1 {
+  color: var(--c1);
+}
+
+.fine-item {
+  padding: 32px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.fine-item h2 {
+  color: var(--c3);
+}
+
+.fine-item ul {
+  color: var(--c1);
+  margin-top: 28px;
+}
+.fine-item ul li {
+  position: relative;
+  margin-top: 16px;
+}
+
+.fine-item ul li:first-child {
+  margin-top: 0px;
+}
+
+.fine-item ul li::before {
+  content: url("/img/icones/lista-check.svg");
+  position: absolute;
+  left: -20px;
+  top: -2px;
+}
+
+.fine-name-price {
+  display: flex;
+  justify-content: space-between;
+}
