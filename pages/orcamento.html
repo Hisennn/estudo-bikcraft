@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikcraft - Orçamento</title>
-    <link rel="preload" href="/css/style.css" as="style" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+sml" />
+    <link rel="preload" href="/css/style.min.css" as="style" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=La+Belle+Aurore&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <div class="head-bg bg-black">
@@ -58,7 +61,7 @@
                     <h2 class="semibold line-13 font14 uppercase">Escolha a sua</h2>
                     <div class="bik-select-type radio-group r-i-g-group">
                       <div class="r-i-g-item">
-                        <input type="radio" id="nimbus" name="bike" value="nimbus" />
+                        <input type="radio" id="nimbus" name="produto" value="nimbus" />
                         <label for="nimbus">Nimbus Stark <span class="rig-preco font16 line-13 f-black">R$ 4999</span></label>
                         <div class="rig-item-content bg-white2 border5">
                           <ul>
@@ -72,7 +75,7 @@
                       </div>
 
                       <div class="r-i-g-item">
-                        <input type="radio" id="magic" name="bike" value="magic" />
+                        <input type="radio" id="magic" name="produto" value="magic" />
                         <label for="magic">Magic Might<span class="rig-preco font16 line-13 f-black">R$ 2599</span></label>
                         <div class="rig-item-content bg-white2 border5">
                           <ul>
@@ -86,7 +89,7 @@
                       </div>
 
                       <div class="r-i-g-item">
-                        <input type="radio" id="nebula" name="bike" value="nebula" />
+                        <input type="radio" id="nebula" name="produto" value="nebula" />
                         <label for="nebula">Nebula Cosmic<span class="rig-preco font16 line-13 f-black">R$ 3999</span></label>
                         <div class="rig-item-content bg-white2 border5">
                           <ul>
@@ -214,5 +217,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>

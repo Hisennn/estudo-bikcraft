@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikcraft - Nimbus Stark</title>
-    <link rel="preload" href="/css/style.css" as="style" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/svg+sml" />
+    <link rel="preload" href="/css/style.min.css" as="style" />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=La+Belle+Aurore&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <div id="bicicletas-interna">
@@ -31,20 +34,27 @@
           <div class="mhbki bg-gray">
             <div class="bike-int marg-center width-limit">
               <div class="name-price">
-                <span class="font36 line-13 poppins medium">R$ 4999</span>
-                <h2 class="font64 line-titleh1 f-white poppins">Nimbus Stark<span class="ponto">.</span></h2>
+                <span class="font36 line-13 poppins medium fadeInLeft" data-anime="150">R$ 4999</span>
+                <h2 class="font64 line-titleh1 f-white poppins fadeInLeft" data-anime="200">Nimbus Stark<span class="ponto">.</span></h2>
               </div>
 
               <div class="bike-int-content">
                 <div class="bike-int-imgs">
-                  <img class="border5" src="/img/bicicleta/nimbus1.jpg" alt="Foto Nimbus Stark 1" width="1120" height="880" />
-                  <img class="border5" src="/img/bicicleta/nimbus2.jpg" alt="Foto Nimbus Stark 2" width="1120" height="880" />
-                  <img class="border5" src="/img/bicicleta/nimbus3.jpg" alt="Foto Nimbus Stark 3" width="1120" height="880" />
+                  <img id="img-principal" class="border5" src="/img/bicicleta/nimbus1.jpg" alt="Foto Nimbus Stark 1" width="1120" height="880" />
+                  <ul>
+                    <li>
+                      <img class="border5" src="/img/bicicleta/nimbus1.jpg" alt="Foto Nimbus Stark 1" width="1120" height="880" />
+                    </li>
+                    <li>
+                      <img class="border5" src="/img/bicicleta/nimbus2.jpg" alt="Foto Nimbus Stark 2" width="1120" height="880" />
+                    </li>
+                    <li><img class="border5" src="/img/bicicleta/nimbus3.jpg" alt="Foto Nimbus Stark 3" width="1120" height="880" /></li>
+                  </ul>
                 </div>
                 <div class="bike-int-info">
                   <p class="b-i-text font24 line-13 regular">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
                   <div class="b-i-i-t-btn">
-                    <a href="/pages/orcamento.html" class="btn-p pad-16-32 poppins semibold uppercase">Comprar Agora</a>
+                    <a href="/pages/orcamento.html?opcao=bikcraft&produto=nimbus" class="btn-p pad-16-32 poppins semibold uppercase">Comprar Agora</a>
                     <span class="font12 poppins semibold border5 ship-stock-img bg-black">
                       <img src="/img/icones/entrega.svg" alt="" width="16" height="16" />
                       entrega em 5 dias
@@ -174,5 +184,8 @@
         </footer>
       </div>
     </div>
+
+    <script src="/plugins/simple-anime.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

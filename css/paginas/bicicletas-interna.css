@@ -23,18 +23,16 @@
 }
 
 .bike-int-imgs {
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-}
-
-.bike-int-imgs img {
-  flex: 1;
-  min-width: 100px;
-}
-
-.bike-int-imgs img:first-child {
   min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bike-int-imgs ul {
+  min-width: 100px;
+  display: flex;
+  gap: 20px;
 }
 
 .b-i-i-t-btn {
@@ -235,6 +233,10 @@
   .bike-other-list {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+  }
+
+  .name-price::after {
+    display: none;
   }
 
   .bike-atc-holder {

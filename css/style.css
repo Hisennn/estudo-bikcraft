@@ -11,6 +11,7 @@
 @import url("/css/paginas/termos.css");
 @import url("/css/paginas/contato.css");
 @import url("/css/paginas/orcamento.css");
+@import url("/css/animacao.css");
 
 * {
   box-sizing: border-box;
@@ -33,7 +34,10 @@ figure {
 }
 
 ul,
-ol {
+ol,
+dl,
+dd,
+dt {
   margin: 0;
   padding: 0;
   list-style: none;
