@@ -30,7 +30,7 @@
 }
 
 .bike-img span {
-  grid-area: 1 / 1;
+  grid-area: 1/1;
   place-self: start end;
   margin-top: 20px;
   background: var(--c10);
@@ -101,14 +101,14 @@
 
 .bike-main-bg:nth-child(even) {
   background: linear-gradient(to right, #fff 30%, var(--c10) 0%);
+}
 
-  p {
-    color: var(--c3);
-  }
+.bike-main-bg:nth-child(even) p {
+  color: var(--c3);
+}
 
-  ul {
-    color: var(--c1);
-  }
+.bike-main-bg:nth-child(even) ul {
+  color: var(--c1);
 }
 
 @media screen and (max-width: 800px) {
